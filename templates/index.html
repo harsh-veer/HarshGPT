@@ -528,7 +528,7 @@
         </div>
 
         <div class="notice" id="noticeText">
-            BappyGPT can make mistakes. Check important info.
+            HarshGPT can make mistakes. Check important info.
         </div>
     </div>
 </main>
@@ -546,7 +546,7 @@
     let threadId = localStorage.getItem("thread_id");
 
     if (!threadId) {
-        threadId = crypto.randomUUID();
+        threadId = Math.random().toString(36).substring(2, 15);
         localStorage.setItem("thread_id", threadId);
     }
 
